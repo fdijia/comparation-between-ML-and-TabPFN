@@ -1,0 +1,64 @@
+[
+    {
+        "model_name": "BalancedLR",
+        "best_combined_params": {
+            "solver": "lbfgs",
+            "max_iter": 500,
+            "class_weight": "balanced",
+            "random_state": 42,
+            "n_jobs": -1,
+            "C": 0.0001,
+            "penalty": "l2"
+        }
+    },
+    {
+        "model_name": "BalancedSVM",
+        "best_combined_params": {
+            "class_weight": "balanced",
+            "probability": true,
+            "random_state": 42,
+            "C": 0.2,
+            "kernel": "rbf",
+            "gamma": 0.01
+        }
+    },
+    {
+        "model_name": "BalancedRF",
+        "best_combined_params": {
+            "sampling_strategy": "auto",
+            "replacement": false,
+            "random_state": 42,
+            "n_jobs": -1,
+            "n_estimators": 400,
+            "max_depth": 3,
+            "min_samples_split": 17,
+            "min_samples_leaf": 3,
+            "bootstrap": true
+        }
+    },
+    {
+        "model_name": "BalancedXGB",
+        "best_combined_params": {
+            "eval_metric": "logloss",
+            "scale_pos_weight": 10.333333333333334,
+            "random_state": 42,
+            "n_jobs": -1,
+            "n_estimators": 200,
+            "max_depth": 4,
+            "learning_rate": 0.05,
+            "subsample": 0.6,
+            "colsample_bytree": 1.0,
+            "gamma": 0,
+            "min_child_weight": 3
+        }
+    },
+    {
+        "model_name": "EasyEnsemble",
+        "best_combined_params": {
+            "sampling_strategy": "auto",
+            "random_state": 42,
+            "n_jobs": -1,
+            "n_estimators": 30
+        }
+    }
+]

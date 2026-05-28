@@ -1,0 +1,36 @@
+{
+    "BalancedLR": {
+        "C": [0.0001, 0.0005, 0.001, 0.002, 0.005, 0.01],
+        "penalty": ["l2"],
+        "solver": ["lbfgs", "saga"],
+        "max_iter": [
+            500, 800, 1000, 1200, 1500, 1800, 2000, 2200]
+    },
+
+    "BalancedSVM": {
+        "C": [0.01, 0.05, 0.1, 0.2, 0.5],
+        "kernel": ["linear", "rbf"],
+        "gamma": ["scale", "auto", 0.001, 0.005, 0.01, 0.02, 0.05]
+    },
+
+    "BalancedRF": {
+        "n_estimators": [200, 300, 400, 500],
+        "max_depth": [null, 3, 4, 5, 6],
+        "min_samples_split": [5, 7, 9, 11, 13, 15, 17],
+        "min_samples_leaf": [1, 2, 3],
+        "bootstrap": [true]
+    },
+
+    "BalancedXGB": {
+        "n_estimators": [200, 300, 400],
+        "max_depth": [1, 2, 3, 4],
+        "learning_rate": [0.01, 0.05, 0.1, 0.2, 0.5],
+        "subsample": [0.6, 0.8, 1.0],
+        "colsample_bytree": [0.6, 0.8, 1.0],
+        "gamma": [0, 0.1, 1],
+        "min_child_weight": [1, 2, 3]
+    },
+    "EasyEnsemble": {
+        "n_estimators": [5, 10, 20, 30]
+    }
+}

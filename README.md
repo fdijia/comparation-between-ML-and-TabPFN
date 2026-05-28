@@ -11,7 +11,7 @@
 ```bash
 conda create -n py13 python=3.13
 ```
-下载tabpfn相关库, 注意tabpfn正在持续更新, 因此代码方面可能发生变化. 
+首先下载tabpfn相关库, 注意[tabpfn](https://github.com/priorlabs/tabpfn)正在持续更新, 因此代码方面可能发生变化. 
 ```bash
 pip install tabpfn
 pip install "tabpfn-extensions[all] @ git+https://github.com/PriorLabs/tabpfn-extensions.git"
